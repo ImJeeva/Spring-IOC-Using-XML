@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		
+		<bean id = "java" class = "IOCUsingXML7.IOCUsingXML7.Implemets.Java" scope = "prototype">
+		<constructor-arg name = "message" value = "said practice the Spring framework,"/>
+		<constructor-arg name="practice" ref = "p"></constructor-arg>
+		<property name = "name" value = "Ksjith sir "></property>
+		</bean>
+		
+		<bean id = "sql" class = "IOCUsingXML7.IOCUsingXML7.Implemets.SQL">
+		<constructor-arg name = "message" value = "saids practice the complex querys."/>
+		<constructor-arg name="practice" ref = "p"></constructor-arg>
+		<property name = "name" value = "Plesena mam "></property>
+		</bean>
+		
+		<bean id = "js" class = "IOCUsingXML7.IOCUsingXML7.Implemets.JS">
+		<constructor-arg name = "message" value = "JavaScript trsiner said careat web pages."/>
+		<constructor-arg name="practice" ref = "p"></constructor-arg>
+		<property name = "name" value = "Rohit sir "></property>
+		</bean>
+		
+		
+		<bean id = "p"  class = "IOCUsingXML7.IOCUsingXML7.Implemets.Practice">
+		<constructor-arg name = "timing" value = "Minumum practice 2 hours."></constructor-arg>
+		</bean>
+</beans>
